@@ -8,9 +8,9 @@ var inquirer = require("inquirer");
 var connection = mysql.createConnection({
   host: "127.0.0.1",
   port: 3306,
-  user: "root",
-  password: "asdf",
-  database: "bamazoncurtis"
+  user: "root",//<mySQLusername>",
+  password: "Hypeman28!!",//<mySQLpassword>",
+  database: "bamazon"
 });
 
 //if server is unable to connect to the bamazon database in error code is thrown
@@ -72,10 +72,6 @@ function pickItemNQuantity() {
             message: "Type the quantity of this item you would like to purchase"
           }
 
-          //******* I could not get this portion of the project to work.  There seems to be something wrong with how
-          //******* chosenItem variable to where it prints undefined to the console.
-          //******* also when I use chosenItem.stock_quantity OR res[i].stock_quantity, an error is thrown
-          //******* any advice on that portion would be greatly appreciated!
         ])
         .then(function(answer) {
           var chosenItem;
