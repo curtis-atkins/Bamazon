@@ -1,9 +1,9 @@
--- if bamazon table exists, delete it and create a new database named bamazon--
-DROP DATABASE IF EXISTS	bamazon;
-CREATE DATABASE bamazon;
+-- if bamazoncurtis table exists, delete it and create a new database named bamazoncurtis--
+DROP DATABASE IF EXISTS	bamazoncurtis;
+CREATE DATABASE bamazoncurtis;
 
 -- select the bamazon database --
-USE bamazon;
+USE bamazoncurtis;
 
 -- create a new table named products that stores columns for an item's: id, name, department, price and quantity --
 CREATE TABLE PRODUCTS (
